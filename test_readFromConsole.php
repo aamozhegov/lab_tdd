@@ -1,6 +1,6 @@
 <?php
 
-require_once('readFromConsole.php');
+require_once('./readFromConsole.php');
 
 
 /*
@@ -32,4 +32,4 @@ function test_readFromConsole() {
 	echo 'Результат: '. $result . ($result === 'test' ? 'тест пройден':'тест не пройден').PHP_EOL;
 }
 
-test_readFromConsole();
+echo test_readFromConsole();
