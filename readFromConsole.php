@@ -17,6 +17,9 @@ function readFromConsole($b)
 	elseif (is_int($b)) {
 		$result = intval($b);
 	}
+	else {
+		$result = null;
+	}
 	echo $result;
 	return $result;
 }
