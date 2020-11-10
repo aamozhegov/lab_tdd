@@ -4,7 +4,7 @@ function readFromConsole($b)
 {
 	$a = 'Введите что-нибудь ';
 	echo $a;
-	$b = fgets(STDIN);
+	$b = trim(fgets(STDIN));
 	if ($b === 'true') {
 		$result = boolval($b);
 	}
