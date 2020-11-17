@@ -1,21 +1,21 @@
 <?php
 
-function readFromConsole($b)
+function readFromConsole()
 {
-	$a = 'Введите что-нибудь ';
-	echo $a;
-	$b = trim(fgets(STDIN));
-	if ($b === 'true') {
-		$result = boolval($b);
+	$message = 'Введите что-нибудь ';
+	echo $message;
+	$user_input = trim(fgets(STDIN));
+	if ($user_input === 'true') {
+		$result = boolval($user_input);
 	}
-	elseif (is_string($b)) {
-		$result = strval($b);
+	elseif (is_string($user_input)) {
+		$result = strval($user_input);
 	}
-	elseif (is_float($b)) {
-		$result = float($b);
+	elseif (is_float($user_input)) {
+		$result = float($user_input);
 	}
-	elseif (is_int($b)) {
-		$result = intval($b);
+	elseif (is_int($user_input)) {
+		$result = intval($user_input);
 	}
 	else {
 		$result = null;
@@ -23,5 +23,7 @@ function readFromConsole($b)
 	echo $result;
 	return $result;
 }
+
+
 
 
